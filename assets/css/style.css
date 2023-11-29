@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box; /* Es para poner el tamaño libre */
+}
+
+body {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(237,236,142,1) 41%, rgba(255,255,0,1) 100%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.imagen {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+
+.chip {
+    background-image: url(../img/chip.png);
+    width: 68px;
+    height: 52px;
+    background-size: cover;
+    margin-top: 60px;
+}
+
+.logo_banco {
+    background-image: url(../img/logo_banco.png);
+    width: 250px;
+    height: 40px;
+    background-size: cover;
+    margin-left: 160px;
+    margin-top: 20px;
+}
+
+.tarjeta {
+    display: block;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 10px 20px 0 20px;
+    box-sizing: border-box;
+    background-color: rgb(0,114,255,1);
+    background: radial-gradient(circle,
+            rgba(0,251,46,1) 35%,
+            rgba(43,226,168,1) 100%);
+    margin: 100px auto;
+    box-shadow: 0 2px 10px rgb(0,0,0,0.5);
+}
+
+.tarjeta input {
+    font-size: 28px;
+    padding: 10px;
+    border: solid 2px rgb(45,154,226);
+    color: black;
+    border-radius: 5px;
+    background-color: beige;
+    margin-top: 10px;
+    outline: none;
+}
+
+.tarjeta #input_fecha {
+    width: 80px;
+}
+
+.tarjeta #input_CVV {
+    width: 50px;
+}
+
+.tarjeta #input_tarjeta::before {
+    content: "Card Number";
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.propietario {
+    display: grid;
+    font-weight: bold;
+    padding-top: 15px;
+    font-size: 1.5rem;
+    color: black;
+}
+.imagen_2 {
+    display: flex;
+    align-items: end;
+}
+
+.logo_master {
+    background-image: url(../img/master.png);
+    width: 80px;
+    height: 62px;
+    background-size: cover;
+    margin: -77px 0px 0px 370px;
+}
